@@ -1,0 +1,80 @@
+
+.st-container-1 {
+    width: 68%;
+    height: 60vh ;
+    margin-bottom: 15px;
+    color: white;
+    position: relative;
+    padding: 0;
+    margin: 100px 17.5% 50px;
+    overflow: hidden;
+    box-shadow: gainsboro 5px 5px 10px;
+    border-radius: 10px;
+
+}
+.st-secondary-container-1{
+    background-image: url(../images/student_profile_back.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+    bottom: 60%;
+    margin-top: -10px;
+
+}
+.st-tertiary-container-1{
+    margin-top: 10px;
+    height: 30vh;
+    bottom: 30%;
+    margin-left: 250px;
+    padding-left: 40px;
+    font-size: x-large;
+}
+.st-circle{
+    border-radius: 50%;
+    z-index: 1;
+    width: 225px;
+    height: 225px;
+    bottom: 20%;
+    position: absolute;
+    left: 5%;
+}
+
+@media (max-width:1024px) {
+    .st-container-1{
+        display: flex;
+        height: auto;
+        width: 80%;
+        margin-bottom: 15px;
+        padding: 0;
+        margin-top: 50px;
+        height: auto;
+        box-shadow: gainsboro 5px 5px 10px;
+        border-radius: 10px;
+    }
+    .st-secondary-container-1{
+      display: none;
+      background-image: url(../images/student_profile_back.png) ;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 30vh;
+      bottom: 60%;
+      margin-top: -10px;
+    }
+    .st-tertiary-container-1{
+        margin-top: 10px;
+        width: auto;
+
+        bottom: 0%;
+        margin-left: 20px;
+        padding-left: 5px;
+        font-size: x-large;
+    }
+    .st-circle{
+        display: block;
+        border-radius: 50%;
+        position: absolute;
+        left: auto;
+        width: 100px;
+        height: 100px;
+    }
+}

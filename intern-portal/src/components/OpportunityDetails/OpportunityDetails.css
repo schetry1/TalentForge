@@ -1,0 +1,141 @@
+.detail-border{
+  border-bottom:1px solid rgba(0, 0, 0, 0.03) ;
+}
+.border-bottom{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.03) ;
+}
+ol{
+ margin-left: 0% !important;
+}
+
+.opportunitypage {
+  padding: 0rem 3rem;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+
+  justify-content: flex-start;
+  /* border: green 1px solid; */
+
+  margin: 3vmax auto;
+  /* height: 500vh; */
+}
+.justify-fend{
+  justify-content: end
+}
+
+.opportunityheading > h1 {
+  font-size: 3.5vmax;
+}
+.opportunityheading > h2 {
+  margin-top:  1vmax;
+}
+
+.tags {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.tag1 {
+  margin-top: 1vmax;
+  margin-bottom: 3.5vmax;
+  display: flex;
+  width: 20%;
+
+  align-items: center;
+}
+
+
+
+.location-icon {
+  font-size: 2.3vmax;
+}
+
+.react-icon {
+  font-size: 2vmax;
+}
+.info-heading{
+  display: flex;
+  align-items: center;
+}
+.info-heading p{
+  margin-left: 4px;
+}
+
+.tag2,
+.tag3 {
+  margin-bottom: 3.5vmax;
+  display: flex;
+  width: 100%;
+
+  justify-content: space-between;
+}
+
+
+
+.info-icon {
+  display: flex;
+}
+
+.info {
+  /* margin-right: 18.5vmax; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+
+.requirements {
+  margin-top: 6vmax;
+}
+
+.requirementspoints {
+  display: flex;
+  flex-direction: column;
+}
+.requirements-lst{
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+
+.perks-openings {
+  margin-top: 5vmax;
+  display: flex;
+  justify-content: space-between;
+}
+
+.openings {
+  margin-right: 15vmax;
+}
+
+.perks > h4,
+.openings > h4 {
+  margin-top: 2vmax;
+}
+
+.tags {
+  margin-top: 2vmax;
+  display: flex;
+  flex-direction: column;
+}
+
+.tags-data {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 1vmax;
+}
+
+.tags-data > h4 {
+  background: #e6e6e6;
+  margin-right: 2vmax;
+  margin-top: 2vmax;
+  padding: 0.3vmax;
+  padding-left: 1vmax;
+  padding-right: 1vmax;
+  border-radius: 20px;
+}

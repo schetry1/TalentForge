@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+ 
+  <a href="/edit">Edit Profile</a> | <a href="/auth/logout">Logout</a> <br><br>
+<center>
+
+  <% var per = 0 %>
+
+  <img src="../<%= user.pic%>" class="rounded-circle mx-auto d-block" alt="Profile Picture" width="160" height="160">
+        <br>
+  <h2> Hey , <%= user.username%> </h2>
+  <h3><%= user.email%></h3>
+
+  <% if(user.pic != 'uploads/user_default2001.png'){ %>
+    <% per += 15 }%>
+  
+    <% if(user.resume != ''){ %>
+    <% per += 15 %>
+    <a href = "../<%= user.resume%>" target = "_blank">CV Link</a>
+    <%}%>
+          
+    <% if(user.roll != 0){ %>
+    <% per += 10 %>
+    <p>Roll Number : <%= user.roll%></p> 
+    <%}%>
+
+    <% if(user.branch != ''){ %>
+    <% per += 10 %>
+    <p>Branch : <%= user.branch%></p> 
+    <%}%>
+  
+    <% if(user.graduation != 0){ %>
+    <% per += 10 %>
+    <p>Graduation Year : <%= user.graduation%></p> 
+    <%}%>
+  
+    <% if(user.bio != ''){ %>
+    <% per += 10 %>
+    <p>Bio: <%= user.bio%></p> 
+    <%}%>
+  
+    <% if(user.skills != ''){ %>
+    <% per += 10 %>
+    <p>Skills : <%= user.skills%></p> 
+    <%}%>
+  
+    <% if(user.linkedin != ''){ %>
+    <% per += 10 %>
+    <a href = "<%= user.linkedin%>" target = "_blank">Connect On linkedIn</a>
+    <%}%>
+  
+    <% if(user.phone != 0){ %>
+    <% per += 10 %>
+    <p>Phone : <%= user.phone%></p> 
+    <%}%>
+  
+            
+  <p>Profile completion : <%= per%> %</p>
+</center>
+  </body>
+</html>

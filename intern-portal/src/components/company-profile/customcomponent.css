@@ -1,0 +1,189 @@
+.custom-component{
+    padding: 4px 10rem;
+    margin-top: 2rem;
+}
+.mb-3{
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+.container-1 {
+   
+    overflow: hidden;
+    height: max-content;
+    margin-bottom: 15px;
+    color: white;
+    position: relative;
+    padding: 0;
+    height: max-content;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+    border-radius: 10px;
+    
+}
+.edtbtn:hover{
+    background-color: inherit !important;
+    margin-right: 8px;
+}
+.edtbtn{
+    margin-right: 16px !important;
+}
+.space-bet{
+    justify-content: space-between;
+}
+.secondary-container-1{
+    background-image: url(../images/company-back.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    bottom: 60%;
+    margin-top: -10px;
+
+}
+.tertiary-container-1{
+   
+  display: flex;
+  justify-content: space-between;
+  margin-left: 250px;
+  font-size: x-large;
+}
+.circle{
+    width: 156px !important;
+    height: 156px !important;
+    z-index: 1; 
+   top: 38%;
+    position: absolute !important;
+    left: 5%;
+}
+
+/* @media (max-width:1024px) {
+    .container-1{
+        display: flex;
+        height: auto;
+        width: 80%;
+        margin-bottom: 15px;
+        padding: 0;
+        margin-top: 50px;
+        height: auto;
+        box-shadow: gainsboro 5px 5px 10px;
+        border-radius: 10px;
+    }
+    .secondary-container-1{
+      display: none;
+      background-image: url(../images/student_profile_back.png) ;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 30vh;
+      bottom: 60%;
+      margin-top: -10px;
+    }
+    .tertiary-container-1{
+        margin-top: 10px;
+        width: auto;
+
+        bottom: 0%;
+        margin-left: 20px;
+        padding-left: 5px;
+        font-size: x-large;
+    }
+    .circle{
+        display: block;
+        border-radius: 50%;
+        position: absolute;
+        left: auto;
+        width: 100px;
+        height: 100px;
+    }
+} */
+
+@media screen and (max-width: 802px){
+    .circle{
+        top: 58%;
+
+    }
+    /* .container-1{
+        display: flex;
+        height: auto;
+        
+        margin-bottom: 15px;
+        padding: 0;
+        margin-top: 50px;
+        height: auto;
+        box-shadow: gainsboro 5px 5px 10px;
+        border-radius: 10px;
+    } */
+    .secondary-container-1{
+      display: none;
+      background-image: url(../images/student_profile_back.png) ;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 30vh;
+      bottom: 60%;
+      margin-top: -10px;
+    }
+    .tertiary-container-1{
+        margin-top: 10px;
+        width: auto;
+
+        bottom: 0%;
+        margin-left: 20px;
+        padding-left: 5px;
+        font-size: x-large;
+    }
+}
+@media screen and (max-width: 572px){
+    .secondary-container-1{
+       display: none;
+       
+      }
+      .circle{
+          left: 25%;
+          top: 10%;
+          position: relative !important;
+          display: block;
+          margin-bottom: 2rem;
+      }
+      .tertiary-container-1{
+          flex-direction: column;
+      }
+      .custom-component{
+        padding: 4px 0px;
+    }
+    .container-1{
+        display: flex;
+        height: auto;
+       
+        margin-bottom: 15px;
+        padding: 0;
+        
+        
+        height: auto;
+     
+        border-radius: 10px;
+    }
+    .secondary-container-1{
+      display: none;
+      background-image: url(../images/student_profile_back.png) ;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 30vh;
+      bottom: 60%;
+      margin-top: -10px;
+    }
+    .tertiary-container-1{
+        margin-top: 10px;
+        width: auto;
+
+        bottom: 0%;
+        margin-left: 20px;
+        padding-left: 5px;
+        font-size: x-large;
+    }
+}

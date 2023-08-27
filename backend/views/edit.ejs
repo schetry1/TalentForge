@@ -1,0 +1,63 @@
+<html>
+    <body>
+<h1>Edit page</h1>
+
+<center><div class="card-body">
+    <img src="../<%= user.pic%>" class="rounded-circle mx-auto d-block" alt="Profile Picture" width="160" height="160">
+
+    </div>
+
+    <form action= '/profile_pic' method="post" enctype="multipart/form-data">
+        <div class="form-outline mb-4">
+    
+            <input type="file" id="profile_pic" name = "profile_pic" class="form-control" required/>
+    
+        </div>
+        <button class="btn btn-primary btn-block mb-4" type="submit">Upload Pic</button>
+      </form>
+
+</div>
+<br>
+<br>
+
+
+<h3>Upload CV</h3>
+<form action= '/cv_upload' method="post" enctype="multipart/form-data">
+    <div class="form-outline mb-4">
+        <input type="file" id="cv_upload" name = "cv_upload" class="form-control" required/>
+    </div>
+    <button class="btn btn-primary btn-block mb-4" type="submit">Upload CV</button>
+  </form>
+<br>
+
+
+<h3>Update Info</h3>
+<form action= '/edit_done' method="post" >
+    <div class="form-outline mb-4">
+        
+        <label for="website">Branch : </label>
+        <input class="form-control" type = "text" placeholder="Branch" name = "branch" id = "branch" value = "<%=user.branch %>" required/><br>
+        <label for="phone">Roll Number : </label>
+        <input class="form-control" type = "number" placeholder="Roll No." name = "roll" id = "roll" value = "<%=user.roll %>" required/><br>
+        <label for="website">Graduation Year : </label>
+        <input class="form-control" type = "number" placeholder="Graduation Year" name = "graduation" id = "graduation" value = "<%=user.graduation %>" /><br>
+        <label for="phone">Phone No. : </label>
+        <input class="form-control" type = "number" placeholder="Phone" name = "phone" id = "phone" value = "<%=user.phone %>" /><br>
+        <label for="phone">Skills : </label>
+        <input class="form-control" type = "text" placeholder="Skills" name = "skills" id = "skills" value = "<%=user.skills %>" /><br>
+        <label for="phone">LinkedIn : </label>
+        <input class="form-control" type = "text" placeholder="LinkedIn" name = "linkedin" id = "linkedin" value = "<%=user.linkedin %>" /><br>
+        <label for="phone">Short Bio : </label>
+        <input class="form-control" type = "text" placeholder="Short Bio" name = "bio" id = "bio" value = "<%=user.bio %>" /><br>
+   <br>
+
+    </div>
+    <button class="btn btn-primary btn-block mb-4" type="submit">Update Info</button>
+  </form>
+<br>
+
+
+
+</center>
+</body>
+</html>

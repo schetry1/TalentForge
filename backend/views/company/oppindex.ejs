@@ -1,0 +1,32 @@
+<h3>All of your jobs</h3>
+
+<table>
+    <thead><tr>
+        <th>S.no</th>
+        <th>Jobname</th>
+    <th>duration</th>
+    <th>location</th>
+    <th>stipend</th>
+    <th>openings</th>
+    </tr>
+    </thead>
+    <tbody>
+        <% opps.forEach((row,index) => { %>
+        <tr>
+          <td class="text-left py-3 px-4"><%= index+1 %></td>
+         
+          <td class="text-left py-3 px-4"><%= row.jobname%></td>
+          <td class="text-left py-3 px-4"><%= row.duration %></td>
+          <td class="text-left py-3 px-4"><%= row.location %></td>
+          <td class="text-left py-3 px-4"><%= row.stipend %></td>
+          <td class="text-left py-3 px-4"><%= row.openings %></td>
+       
+
+
+        
+        </tr>
+        <% }) %>
+      </tbody>
+
+
+</table>
